@@ -1,0 +1,107 @@
+@import 'App.scss';
+
+.footer {
+    .container {
+        width: 100%;
+        background-color: #292c2f;
+        color: #bbb;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
+
+        &__column {
+            padding: 0px 48px;
+        }
+
+        &--touch--icon {
+            font-size: 18px;
+            color: $footer-icon-color;
+        }
+
+        &--company {
+            display: inline;
+            font-size: 18px;
+            opacity: 0.9;
+            padding-left: 40px;
+        }
+
+        &--text {
+            width: 250px;
+            font-size: 12px;
+            padding: 0px 2px;
+            opacity: 0.4;
+            padding-top: 10px;
+        }
+
+        &--icon {
+            display: inline;
+            padding-left: 40px;
+            font-size: 18px;
+            color: $footer-icon-color;
+        }
+
+        &--contact {
+            width: 260px;
+            font-size: 12px;
+            padding: 2px 2px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+
+            &--text {
+                opacity: 0.4;
+                padding: 0px 14px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &--icon {
+                font-size: 18px;
+                color: $footer-icon-color;
+            }
+
+            &--social-media {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 18px;
+
+                span {
+                    cursor: pointer;
+                    font-size: 20px;
+                    opacity: 0.4;
+                    padding-left: 18px;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &__sub {
+        background-color: #222222;
+
+        &__text {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        &__company {
+            color: rgb(255, 255, 255);
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import 'App.scss';
+
+.domestic {
+    height: 100%;
+
+    &__content {
+        font-size: 22px;
+        width: 1400px;
+        margin: 120px auto;
+
+        &--image {
+            display: inline;
+            width: 550px;
+            height: 380px;
+            border: 2px solid $content-text-color;
+            padding: 2px;
+            margin: 0px 28px;
+
+            &--left {
+                float: left;
+            }
+
+            &--right {
+                float: right;
+            }
+        }
+
+        &--header {
+            font-size: 60px;
+            letter-spacing: 12px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            pointer-events: none;
+            margin: 120px 0px;
+        }
+
+        &--text {
+            text-align: justify;
+            word-spacing: 3px;
+            tab-size: 4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 200;
+            color: rgb(0, 0, 0);
+            padding-top: 80px;
+
+            &--icon {
+                font-size: 15px;
+                color: #3d8943;
+            }
+        }
+
+        &--title {
+            margin: 80px;
+            font-size: 40px;
+            letter-spacing: 2px;
+
+            &--left {
+                text-align: start;
+            }
+
+            &--right {
+                text-align: end;
+            }
+
+            &--center {
+                text-align: center;
+            }
+        }
+    }
+}

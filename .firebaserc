@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "rsolime"
+  },
+  "targets": {
+    "rsolime": {
+      "hosting": {
+        "rsolime": [
+          "rsolime.web.app"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

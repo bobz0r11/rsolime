@@ -1,0 +1,42 @@
+@import 'App.scss';
+
+.home {
+    margin: 130px 0px;
+
+    &__box {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100em;
+            margin: auto;
+            padding-top: 30px;
+        }
+    }
+
+    &__company-name {
+        height: 100%;
+        text-align: center;
+        font-size: 120px;
+        color: $header-company-name-color;
+        letter-spacing: 40px;
+        font-family: serif;
+        pointer-events: none;
+        animation: fadeInBottom 2s forwards;
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(60%);
+        opacity: 0;
+        filter: none;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+        filter: drop-shadow(-8px 0px 8px #2b3467);
+    }
+}

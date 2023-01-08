@@ -1,0 +1,86 @@
+$overlay-background-color: #fcffe7;
+$box-background-color: #fcffe7;
+$navbar-background-color: #2b3467;
+$box-title-color: #2b3467;
+$box-text-color: $navbar-background-color;
+$navbar-text-hover-color: $box-background-color;
+$navbar-text-color: $overlay-background-color;
+$content-text-color: rgb(0, 0, 0);
+$footer-icon-color: $overlay-background-color;
+$header-company-name-color: #65C2F5;
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: table;
+
+    .content {
+        display: table-cell;
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 190;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $overlay-background-color;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.active {
+    opacity: 1;
+}
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+.active.fade-top {
+    animation: fade-top 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

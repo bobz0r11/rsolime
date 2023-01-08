@@ -1,0 +1,68 @@
+@import 'App.scss';
+
+.box {
+    background-color: $box-background-color;
+    color: $box-text-color;
+    margin: 20px;
+    transition: transform 0.5s;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: default;
+    animation: fadeInBottomBlur 2s forwards;
+    flex: 0 0 30%;
+
+    &__header {
+        padding: 20px;
+        display: block;
+        font-weight: 600;
+    }
+
+    &__content {
+        display: block;
+        font-size: 14px;
+        padding: 18px;
+        letter-spacing: 0px;
+        word-spacing: 2px;
+        text-align: justify;
+
+        &--read-more {
+            font-weight: bold;
+            padding: 8px;
+            cursor: pointer;
+            text-align: end;
+            text-decoration: none;
+            color: unset;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 32px;
+        color: $box-title-color;
+    }
+
+    &__title {
+        font-size: 14px;
+        color: $box-title-color;
+    }
+}
+
+@keyframes fadeInBottomBlur {
+    0% {
+        transform: skew(0deg) translateY(60%);
+        opacity: 0;
+        filter: blur(12px);
+    }
+    100% {
+        transform: skew(-10deg) translateY(0%);
+        opacity: 1;
+        filter: none;
+    }
+}
