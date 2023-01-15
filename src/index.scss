@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'SofiaSans';
+    src: url('/src/style/fonts/Sofia_Sans/SofiaSans-Regular.ttf');
+    src: url('SofiaSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/src/style/fonts/Sofia_Sans/SofiaSans-Regular.woff') format('woff'), /* Modern Browsers */
+    url('/src/style/fonts/Sofia_Sans/SofiaSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/src/style/fonts/Sofia_Sans/SofiaSans-Regular.svg') format('svg'); /* Legacy iOS */
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  * {
+    // used for Firefox
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: SofiaSans;
+  
+    ::-webkit-scrollbar-thumb {
+      min-height: 30px;
+    }
+  
+    ::-webkit-scrollbar {
+      width: 14px;
+      height: 14px;
+    }
+  
+    ::-webkit-scrollbar-thumb:vertical {
+      border-radius: 8px;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  
+    ::-webkit-scrollbar-thumb:horizontal {
+      border-radius: 8px;
+      border-bottom: 4px solid transparent;
+      border-top: 4px solid transparent;
+    }
+  }

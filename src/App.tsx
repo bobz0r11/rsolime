@@ -1,15 +1,13 @@
 import React from 'react';
 
-function App() {
 
-  const onClick = () => {
-    console.log('works')
-  }
+import './App.scss'
+import Home from 'components/home';
 
+const App = () => {
   return (
-    <div className="App"
-      onClick={() => onClick()}>
-      HELLOOOOOOOOOOOOOOOOOOOOOOOoo
+    <div className="App">
+      <Home />
     </div>
   );
 }

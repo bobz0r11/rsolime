@@ -17,6 +17,11 @@ module.exports = {
             inject: false,
         }),
     ],
+    resolve: {
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".d.ts"],
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        preferRelative: true,
+    },
     devServer: {
         port: 3000,
     },
@@ -45,7 +50,4 @@ module.exports = {
             },
         ],
     },
-    resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".d.ts"],
-    }
 };
