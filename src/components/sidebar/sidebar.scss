@@ -1,0 +1,45 @@
+.sidebar {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #144272;
+    overflow-x: hidden;
+    display: table-cell;
+    vertical-align: top;
+
+    &__list-container {
+        position: fixed;
+        top: 45%;
+        width: inherit;
+    }
+
+    a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #DDDDDD;
+        display: block;
+
+        &:hover {
+            color: #f0ffff;
+        }
+    }
+}
+
+.content {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
