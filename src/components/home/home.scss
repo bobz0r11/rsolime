@@ -1,0 +1,25 @@
+.home {
+    .overlay {
+        position: fixed;
+        display: block;
+        width: 90%;
+        height: 100%;
+        top: 0;
+        left: 190;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: repeating-linear-gradient(
+                90deg,
+                rgba(32, 82, 149, 0.6),
+                rgba(32, 82, 149, 0.6) 0.3rem,
+                rgba(32, 82, 149, 0.5) 0.3rem,
+                rgba(32, 82, 149, 0.5) 0.5rem
+            ),
+            fixed;
+    }
+
+    #point2 {
+        margin-top: 100em;
+    }
+}

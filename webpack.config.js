@@ -48,6 +48,10 @@ module.exports = {
                 loader: 'ts-loader',
                 exclude: /node_modules|\.d\.ts$/,
             },
+            {
+                test: /\.(woff|woff2|ttf|eot|png|jpg|svg|gif)$/i,
+                use: ['file-loader']
+            }
         ],
     },
 };

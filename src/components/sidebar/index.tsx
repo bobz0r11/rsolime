@@ -10,7 +10,7 @@ const Sidebar = () => {
     return (
         <React.Fragment>
             <div className="sidebar">
-                <div className="sidebar__list-container">
+                <div className="container">
                     <ul className="sidebar__list">
                         {
                             paths.map(({ id, path, name }) => {
