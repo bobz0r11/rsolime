@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 import { paths } from 'constants/app-constants';
 
@@ -14,13 +13,13 @@ const Sidebar = () => {
                 <div className="sidebar__container">
                     <ul className="sidebar__list">
                         {
-                            paths.map(({ id, path, name }) => {
+                            paths.map(({ id, name }) => {
                                 return (
                                     <li
                                         key={id}
                                         className="sidebar__list__item"
                                     >
-                                        <Link to={path}> {name} </Link>
+                                        {name}
                                     </li>
                                 );
                             })

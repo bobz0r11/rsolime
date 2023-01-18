@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+.footer {
+    .container {
+        height: 8em;
+        width: 100%;
+        padding-top: 1em;
+        background-color: #292c2f;
+        color: #bbb;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__header {
+        height: 2em;
+        svg {
+            font-size: 24px;
+            color: #4E6C50;
+        }
+    }
+
+    footer a {
+        color: #999;
+        text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+        color: #aaa;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+    }
+
+    &__lists {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        &__list {
+            text-align: left;
+            padding: 0px 14px;
+
+            &--item {
+                font-size: 0.6em;
+                cursor: pointer;
+                padding: 2px 0px;
+
+                &:hover {
+                    color: #faecd6;
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import Box from 'components/box';
 import './home.scss'
 
-import { FcStackOfPhotos } from "react-icons/fc";
+import { GiPill } from "react-icons/gi";
 
 const Home = () => {
     const scrollTo1 = () => {
@@ -24,32 +24,32 @@ const Home = () => {
                 <Box
                     title={'Service 1'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
                 <Box
                     title={'Service 2'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
                 <Box
                     title={'Service 3'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
                 <Box
                     title={'Service 4'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
                 <Box
                     title={'Service 5'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
                 <Box
                     title={'Service 6'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={FcStackOfPhotos}
+                    iconName={GiPill}
                 />
             </div>
             <div id="point2" onClick={() => scrollTo1()}>pointpointpointpointpointpointpointpointpointpointpointpointpointpoint</div>

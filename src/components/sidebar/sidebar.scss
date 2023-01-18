@@ -19,7 +19,17 @@
             text-align: center;
 
             &__item {
-                padding: 2px 0px;
+                padding: 6px 8px 28px 16px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #dddddd;
+                display: block;
+                cursor: pointer;
+        
+                &:hover {
+                    color: #f0ffff;
+                    opacity: .7;
+                }
             }
         }
 
@@ -49,19 +59,6 @@
                     color: #f0ffff;
                 }
             }
-        }
-    }
-
-    a {
-        padding: 6px 8px 28px 16px;
-        text-decoration: none;
-        font-size: 18px;
-        color: #dddddd;
-        display: block;
-
-        &:hover {
-            color: #f0ffff;
-            opacity: .7;
         }
     }
 }
