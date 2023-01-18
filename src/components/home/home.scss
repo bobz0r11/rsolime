@@ -8,7 +8,7 @@
         left: 190;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: -1;
         background: repeating-linear-gradient(
                 90deg,
                 rgba(32, 82, 149, 0.6),
@@ -17,6 +17,15 @@
                 rgba(32, 82, 149, 0.5) 0.5rem
             ),
             fixed;
+    }
+
+    &__box {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     #point2 {
