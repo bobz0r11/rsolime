@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { paths } from 'constants/app-constants';
 
@@ -14,9 +14,28 @@ interface SidebarProps {
 };
 
 const Sidebar = () => {
+    const sidebarRef: any = useRef();
+
+    const onMouseEnter = (): void => {
+        console.log('enter');
+        const sidebar = sidebarRef.current;
+        sidebar.style.left = '0';
+    };
+
+    const onMouseLeave = (): void => {
+        console.log('leave');
+        const sidebar = sidebarRef.current;
+        sidebar.style.left = '-10em';
+    }
+
     return (
         <React.Fragment>
-            <div className="sidebar">
+            <div
+                className="sidebar"
+                ref={sidebarRef}
+                onMouseEnter={() => onMouseEnter()}
+                onMouseLeave={() => onMouseLeave()}
+            >
                 <div className="sidebar__container">
                     <ul className="sidebar__list">
                         {

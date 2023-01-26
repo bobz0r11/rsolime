@@ -4,11 +4,15 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -10em;
     background-color: #292c2f;
-
+    transition: .3s;
     display: table-cell;
     vertical-align: top;
+
+    &:hover {
+        left: 0;
+    }
 
     &__container {
         position: fixed;
