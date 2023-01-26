@@ -4,22 +4,9 @@ import './home.scss'
 import { GiPill } from "react-icons/gi";
 
 const Home = () => {
-    const scrollTo1 = () => {
-        const elem = document.querySelector('#point1');
-        console.log('elem1', elem);
-        elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    };
-
-    const scrollTo2 = () => {
-        const elem = document.querySelector('#point2');
-        console.log('elem2', elem);
-        elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    };
-
-    return <>
+    return (
         <div className="home">
             <div className="overlay"></div>
-            <div id="point1" onClick={() => scrollTo2()}>pointpointpointpointpointpointpointpointpointpointpointpointpointpoint</div>
             <div className="home__box__container">
                 <Box
                     title={'Service 1'}
@@ -52,9 +39,8 @@ const Home = () => {
                     iconName={GiPill}
                 />
             </div>
-            <div id="point2" onClick={() => scrollTo1()}>pointpointpointpointpointpointpointpointpointpointpointpointpointpoint</div>
         </div>
-    </>
+    );
 }
 
 export default Home;

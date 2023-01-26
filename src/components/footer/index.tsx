@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__header">
                     <span className="footer__header--icon"> <GiMedicinePills /> </span>
-                    <span className="footer__header--text">Roberto Solime</span>
+                    <span className="footer__header--text">Your company name</span>
                 </div>
 
                 <div className="footer__lists">

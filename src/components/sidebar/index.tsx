@@ -13,11 +13,12 @@ const Sidebar = () => {
                 <div className="sidebar__container">
                     <ul className="sidebar__list">
                         {
-                            paths.map(({ id, name }) => {
+                            paths.map(({ id, name, onClick }) => {
                                 return (
                                     <li
-                                        key={id}
                                         className="sidebar__list__item"
+                                        key={id}
+                                        onClick={onClick}
                                     >
                                         {name}
                                     </li>

@@ -3,7 +3,7 @@ import Sidebar from 'components/sidebar';
 
 import About from 'components/about';
 import Contact from 'components/contact';
-import Portofolio from 'components/portofolio';
+import OurProduct from 'components/ourproduct';
 import Footer from 'components/footer';
 
 import './App.scss'
@@ -14,7 +14,7 @@ const App = () => {
       <Sidebar />
       <div className="content">
         <Home />
-        <Portofolio />
+        <OurProduct />
         <Contact />
         <About />
         <Footer />
