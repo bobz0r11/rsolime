@@ -21,7 +21,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: SofiaSans, Fallback, sans-serif;
+  // font-family: SofiaSans, Fallback, sans-serif;
   font-size: 12px;
 }
 
@@ -38,6 +38,7 @@ label {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: cursive;
   outline: none;
   scroll-behavior: smooth !important;
 

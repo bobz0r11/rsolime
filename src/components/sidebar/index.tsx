@@ -6,6 +6,13 @@ import { FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube } from "react
 
 import './sidebar.scss'
 
+interface SidebarProps {
+    id?: any,
+    name?: String,
+    iconName?: any,
+    onClick?(): void,
+};
+
 const Sidebar = () => {
     return (
         <React.Fragment>
@@ -13,14 +20,20 @@ const Sidebar = () => {
                 <div className="sidebar__container">
                     <ul className="sidebar__list">
                         {
-                            paths.map(({ id, name, onClick }) => {
+                            paths.map(({ id, name, iconName, onClick }: SidebarProps) => {
+                                const Icon = iconName;
                                 return (
                                     <li
                                         className="sidebar__list__item"
                                         key={id}
                                         onClick={onClick}
                                     >
-                                        {name}
+                                        <div className="sidebar__list__item--icon">
+                                            {iconName ? <Icon /> : null}
+                                        </div>
+                                        <div className="sidebar__list__item--text">
+                                            {name}
+                                        </div>
                                     </li>
                                 );
                             })

@@ -3,15 +3,25 @@ import OurProduct from 'components/ourproduct';
 import About from 'components/about';
 import Contact from 'components/contact';
 
+import { FaHome } from "react-icons/fa";
+import { BsFillHandbagFill } from "react-icons/bs";
+import { RiContactsBookFill } from "react-icons/ri";
+import { AiFillInfoCircle } from 'react-icons/ai';
+
+const scrollTo = (elem: Element | null): void => {
+    elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
 export const paths = [
     {
         id: 'home',
         path: '/',
         name: 'Home',
         component: Home,
+        iconName: FaHome,
         onClick: (): void => {
             const elem = document.querySelector('.home__box__container');
-            elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            scrollTo(elem);
         },
     },
     {
@@ -19,15 +29,17 @@ export const paths = [
         path: '/ourproduct',
         name: 'Our Product',
         component: OurProduct,
+        iconName: BsFillHandbagFill,
     },
     {
         id: 'contact',
         path: '/contact',
         name: 'Contact',
         component: Contact,
+        iconName: RiContactsBookFill,
         onClick: (): void => {
             const elem = document.querySelector('.footer');
-            elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            scrollTo(elem);
         },
     },
     {
@@ -35,9 +47,10 @@ export const paths = [
         path: '/about',
         name: 'About',
         component: About,
+        iconName: AiFillInfoCircle,
         onClick: (): void => {
             const elem = document.querySelector('.footer');
-            elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            scrollTo(elem);
         },
     },
 ];
