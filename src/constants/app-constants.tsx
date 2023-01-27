@@ -30,6 +30,10 @@ export const paths = [
         name: 'Our Product',
         component: OurProduct,
         iconName: BsFillHandbagFill,
+        onClick: (): void => {
+            const elem = document.querySelector('.our-product__content');
+            scrollTo(elem);
+        },
     },
     {
         id: 'contact',

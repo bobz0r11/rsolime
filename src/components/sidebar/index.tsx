@@ -14,14 +14,14 @@ interface SidebarProps {
 };
 
 const Sidebar = () => {
-    const listItems = Array.from(document.getElementsByClassName('sidebar__list__item') as HTMLCollectionOf<HTMLElement>);
-
     const sidebarRef: any = useRef();
     const itemsRef: any = useRef([]);
 
     const [isExpanded, setIsExpanded] = useState(false);
 
     const onMouseEnter = (): void => {
+        const listItems = Array.from(document.getElementsByClassName('sidebar__list__item') as HTMLCollectionOf<HTMLElement>);
+
         const sidebar = sidebarRef.current;
         sidebar.style.left = '0';
 
@@ -31,6 +31,8 @@ const Sidebar = () => {
     };
 
     const onMouseLeave = (): void => {
+        const listItems = Array.from(document.getElementsByClassName('sidebar__list__item') as HTMLCollectionOf<HTMLElement>);
+
         const sidebar = sidebarRef.current;
         sidebar.style.left = '-115px';
 
@@ -60,13 +62,15 @@ const Sidebar = () => {
                                         ref={itemsRef}
                                     >
                                         <div className="sidebar__list__item--icon">
-                                            {iconName ? <Icon /> : null}
+                                            {(iconName) ? <Icon /> : null}
                                         </div>
-                                        {isExpanded ?
-                                            <div className="sidebar__list__item--text">
-                                                {name}
-                                            </div>
-                                            : null
+                                        {
+                                            (isExpanded) ?
+                                                (
+                                                    <div className="sidebar__list__item--text">
+                                                        {name}
+                                                    </div>
+                                                ) : null
                                         }
                                     </li>
                                 );
@@ -74,7 +78,7 @@ const Sidebar = () => {
                         }
                     </ul>
                     {
-                        isExpanded ?
+                        (isExpanded) ?
                             (
                                 <>
                                     <div className="sidebar__separator"></div>

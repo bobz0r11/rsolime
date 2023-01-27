@@ -1,7 +1,7 @@
 .box {
     background-color: #e0f0ff;
-    width: 260px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
     padding: 4px;
     margin: 20px;
     transition: transform 0.3s;
@@ -9,20 +9,24 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     cursor: pointer;
     opacity: 0;
+    text-align: center;
     animation: opacityAnimation;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-delay: 0.3s;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 
     &:hover {
         transform: scale(1.3);
         z-index: 999;
+        border-radius: 0px;
+        border: 1px solid #3a82fd;
+        border-width: thin;
+        transition: .7s;
     }
 
     &__header {
         display: block;
-        text-align: center;
         font-weight: 600;
     }
 
