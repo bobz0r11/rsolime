@@ -9,8 +9,28 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        background-color: #292c2f;
-        background-image: linear-gradient(90deg, #292c2f 0%, #2893f3 100%);
+        background: hsla(199, 94%, 94%, 1);
+
+        background: linear-gradient(
+            270deg,
+            hsla(199, 94%, 94%, 1) 0%,
+            hsla(197, 100%, 86%, 1) 50%,
+            hsla(197, 100%, 55%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+            270deg,
+            hsla(199, 94%, 94%, 1) 0%,
+            hsla(197, 100%, 86%, 1) 50%,
+            hsla(197, 100%, 55%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+            270deg,
+            hsla(199, 94%, 94%, 1) 0%,
+            hsla(197, 100%, 86%, 1) 50%,
+            hsla(197, 100%, 55%, 1) 100%
+        );
     }
 
     &__box {
@@ -19,6 +39,8 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            width: 100em;
+            margin: auto;
         }
     }
 }

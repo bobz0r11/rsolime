@@ -4,11 +4,16 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -10em;
-    background-color: #292c2f;
-    transition: .3s;
+    left: -115px;
+    background-color: #e0f0ff;
+    transition: 0.3s;
     display: table-cell;
     vertical-align: top;
+    border-right: 1px solid #375675;
+    border-width: thin;
+    animation: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
     &:hover {
         left: 0;
@@ -23,22 +28,23 @@
             padding-left: 1.5em;
 
             &__item {
-                padding: 6px 8px 28px 20px;
+                padding: 6px 28px 28px 20px;
                 text-decoration: none;
                 font-size: 18px;
-                color: #dddddd;
+                color: #375675;
                 display: flex;
                 cursor: pointer;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 white-space: nowrap;
                 justify-content: flex-start;
                 align-items: center;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+                transition: 0.5s;
 
                 &:hover {
-                    color: #f0ffff;
+                    color: #3a82fd;
                     text-decoration: underline;
                     opacity: 0.7;
                 }
@@ -57,7 +63,7 @@
             height: 4px;
             width: 70%;
             margin: auto;
-            background-color: #dfd3c3;
+            background-color: #375675;
             border-radius: 2px;
             margin-top: 1em;
         }
@@ -65,18 +71,33 @@
         .sidebar__social-media {
             text-align: center;
             padding: 1em 0px;
-            font-size: 14px;
             text-decoration: none;
-            font-size: 18px;
-            color: #dddddd;
+            font-size: 24px;
+            color: black;
             display: block;
 
             &--icon {
-                cursor: pointer;
                 padding: 0px 2px;
 
                 &:hover {
-                    color: #f0ffff;
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
+
+                &--fb {
+                    color: #3b5998;
+                }
+
+                &--ig {
+                    color: #df578e;
+                }
+
+                &--tw {
+                    color: #00acee;
+                }
+
+                &--yt {
+                    color: #ff0000;
                 }
             }
         }
@@ -93,5 +114,17 @@
     }
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 1px 0px 8px 6px steelblue;
+    }
+    70% {
+        box-shadow: 0px 0px 0px 0px steelblue;
+    }
+    100% {
+        box-shadow: 1px 0px 8px 6px steelblue;
     }
 }

@@ -1,8 +1,8 @@
 .box {
-    background-color: lightgrey;
-    width: 320px;
-    height: 18em;
-    padding: 20px;
+    background-color: #e0f0ff;
+    width: 260px;
+    height: 200px;
+    padding: 4px;
     margin: 20px;
     transition: transform 0.3s;
     border-radius: 4px;
@@ -28,18 +28,17 @@
 
     &__content {
         display: block;
-        margin-top: 1.5em;
         font-size: 12px;
+        padding: 24px;
     }
 
     &__icon {
-        margin-bottom: 0.5em;
-        font-size: 4em;
-        color: #4e6c50;
+        font-size: 32px;
+        color: #375675;
     }
 
     &__title {
-        font-size: 1.5em;
+        font-size: 14px;
     }
 
     @keyframes opacityAnimation {

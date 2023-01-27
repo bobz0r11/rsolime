@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import { paths } from 'constants/app-constants';
 
@@ -14,18 +14,29 @@ interface SidebarProps {
 };
 
 const Sidebar = () => {
+    const listItems = Array.from(document.getElementsByClassName('sidebar__list__item') as HTMLCollectionOf<HTMLElement>);
+
     const sidebarRef: any = useRef();
+    const itemsRef: any = useRef([]);
+
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const onMouseEnter = (): void => {
-        console.log('enter');
         const sidebar = sidebarRef.current;
         sidebar.style.left = '0';
+
+        setIsExpanded(true);
+
+        listItems.forEach(elem => elem.style.flexDirection = 'row');
     };
 
     const onMouseLeave = (): void => {
-        console.log('leave');
         const sidebar = sidebarRef.current;
-        sidebar.style.left = '-10em';
+        sidebar.style.left = '-115px';
+
+        setIsExpanded(false);
+
+        listItems.forEach(elem => elem.style.flexDirection = 'row-reverse');
     }
 
     return (
@@ -46,25 +57,56 @@ const Sidebar = () => {
                                         className="sidebar__list__item"
                                         key={id}
                                         onClick={onClick}
+                                        ref={itemsRef}
                                     >
                                         <div className="sidebar__list__item--icon">
                                             {iconName ? <Icon /> : null}
                                         </div>
-                                        <div className="sidebar__list__item--text">
-                                            {name}
-                                        </div>
+                                        {isExpanded ?
+                                            <div className="sidebar__list__item--text">
+                                                {name}
+                                            </div>
+                                            : null
+                                        }
                                     </li>
                                 );
                             })
                         }
                     </ul>
-                    <div className="sidebar__separator"></div>
-                    <div className="sidebar__social-media">
-                        <span title="Facebook" className="sidebar__social-media--icon"> <FaFacebookSquare /> </span>
-                        <span title="Instagram" className="sidebar__social-media--icon"> <FaInstagramSquare /> </span>
-                        <span title="Twitter" className="sidebar__social-media--icon"> <FaTwitter /> </span>
-                        <span title="YouTube" className="sidebar__social-media--icon"> <FaYoutube /> </span>
-                    </div>
+                    {
+                        isExpanded ?
+                            (
+                                <>
+                                    <div className="sidebar__separator"></div>
+                                    <div className="sidebar__social-media">
+                                        <span
+                                            title="Facebook"
+                                            className="sidebar__social-media--icon sidebar__social-media--icon--fb"
+                                        >
+                                            <FaFacebookSquare />
+                                        </span>
+                                        <span
+                                            title="Instagram"
+                                            className="sidebar__social-media--icon sidebar__social-media--icon--ig"
+                                        >
+                                            <FaInstagramSquare />
+                                        </span>
+                                        <span
+                                            title="Twitter"
+                                            className="sidebar__social-media--icon sidebar__social-media--icon--tw"
+                                        >
+                                            <FaTwitter />
+                                        </span>
+                                        <span
+                                            title="YouTube"
+                                            className="sidebar__social-media--icon sidebar__social-media--icon--yt"
+                                        >
+                                            <FaYoutube />
+                                        </span>
+                                    </div>
+                                </>
+                            ) : null
+                    }
                 </div>
             </div>
         </React.Fragment>
