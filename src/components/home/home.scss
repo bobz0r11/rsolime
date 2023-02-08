@@ -1,45 +1,26 @@
+$overlay-background-color: #F8F4EA;
+
 .home {
-    margin-top: 100px;
+    margin: 300px 0px;
 
     .overlay {
         position: fixed;
         display: block;
-        width: 97%;
+        width: 100%;
         height: 100%;
         top: 0;
         left: 190;
         right: 0;
         bottom: 0;
         z-index: -1;
-        background: hsla(199, 94%, 94%, 1);
-
-        background: linear-gradient(
-            270deg,
-            hsla(199, 94%, 94%, 1) 0%,
-            hsla(197, 100%, 86%, 1) 50%,
-            hsla(197, 100%, 55%, 1) 100%
-        );
-
-        background: -moz-linear-gradient(
-            270deg,
-            hsla(199, 94%, 94%, 1) 0%,
-            hsla(197, 100%, 86%, 1) 50%,
-            hsla(197, 100%, 55%, 1) 100%
-        );
-
-        background: -webkit-linear-gradient(
-            270deg,
-            hsla(199, 94%, 94%, 1) 0%,
-            hsla(197, 100%, 86%, 1) 50%,
-            hsla(197, 100%, 55%, 1) 100%
-        );
+        background-color: $overlay-background-color;
     }
 
     &__box {
         &__container {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             width: 100em;
             margin: auto;

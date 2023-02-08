@@ -1,7 +1,9 @@
 import Box from 'components/box';
 import './home.scss'
 
-import { GiPill } from "react-icons/gi";
+import { GiPill, GiFactory, GiChicken } from "react-icons/gi";
+import { TbPig } from "react-icons/tb";
+import { VscPerson } from "react-icons/vsc";
 
 const Home = () => {
     return (
@@ -9,29 +11,34 @@ const Home = () => {
             <div className="overlay"></div>
             <div className="home__box__container">
                 <Box
-                    title={'Service 1'}
+                    title={'Domestico'}
+                    message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
+                    iconName={TbPig}
+                />
+                <Box
+                    title={'Fertile'}
+                    message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
+                    iconName={VscPerson}
+                />
+                <Box
+                    title={'Aziende agricole'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
                     iconName={GiPill}
                 />
                 <Box
-                    title={'Service 2'}
+                    title={'HORECA'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={GiPill}
+                    iconName={GiFactory}
                 />
                 <Box
-                    title={'Service 3'}
+                    title={'Entita pubblici'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={GiPill}
+                    iconName={GiChicken}
                 />
                 <Box
-                    title={'Service 4'}
+                    title={'Industriale'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={GiPill}
-                />
-                <Box
-                    title={'Service 5'}
-                    message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
-                    iconName={GiPill}
+                    iconName={GiChicken}
                 />
             </div>
         </div>

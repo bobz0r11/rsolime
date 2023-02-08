@@ -1,10 +1,6 @@
 @font-face {
-  font-family: "SofiaSans";
-  src: url("/src/style/fonts/Sofia_Sans/SofiaSans-Regular.ttf");
-  src: url("/src/style/fonts/Sofia_Sans/SofiaSans-Regular.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("/src/style/fonts/Sofia_Sans/SofiaSans-Regular.woff") format("woff"),
-    /* Modern Browsers */ url("/src/style/fonts/Sofia_Sans/SofiaSans-Regular.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("/src/style/fonts/Sofia_Sans/SofiaSans-Regular.svg") format("svg");
+  font-family: "Inter";
+  src: url("/src/style/fonts/Inter/static/Inter-ExtraBold.ttf");
 }
 
 .clearfix::after {
@@ -21,7 +17,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  // font-family: SofiaSans, Fallback, sans-serif;
+  font-family: Inter, Fallback, sans-serif;
   font-size: 12px;
 }
 
@@ -38,7 +34,6 @@ label {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: cursive;
   outline: none;
   scroll-behavior: smooth !important;
 
