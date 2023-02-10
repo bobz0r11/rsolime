@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 
 import { paths } from 'constants/app-constants';
 
@@ -49,39 +49,6 @@ const Sidebar = () => {
                             })
                         }
                     </ul>
-                    {/* {
-                        (
-                            <>
-                                <div className="sidebar__separator"></div>
-                                <div className="sidebar__social-media">
-                                    <span
-                                        title="Facebook"
-                                        className="sidebar__social-media--icon sidebar__social-media--icon--fb"
-                                    >
-                                        <FaFacebookSquare />
-                                    </span>
-                                    <span
-                                        title="Instagram"
-                                        className="sidebar__social-media--icon sidebar__social-media--icon--ig"
-                                    >
-                                        <FaInstagramSquare />
-                                    </span>
-                                    <span
-                                        title="Twitter"
-                                        className="sidebar__social-media--icon sidebar__social-media--icon--tw"
-                                    >
-                                        <FaTwitter />
-                                    </span>
-                                    <span
-                                        title="YouTube"
-                                        className="sidebar__social-media--icon sidebar__social-media--icon--yt"
-                                    >
-                                        <FaYoutube />
-                                    </span>
-                                </div>
-                            </>
-                        )
-                    } */}
                 </div>
             </div>
         </React.Fragment>

@@ -48,6 +48,10 @@ $footer-icon-color: #579bb1;
             width: 260px;
             font-size: 12px;
             padding: 2px 2px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
 
             &--text {
                 opacity: 0.4;
@@ -76,6 +80,7 @@ $footer-icon-color: #579bb1;
                     cursor: pointer;
                     font-size: 20px;
                     opacity: 0.4;
+                    padding-left: 18px;
 
                     &:hover {
                         opacity: 1;

@@ -5,7 +5,7 @@ $our-product-title-color: #579bb1;
 .our-product {
     height: 800px;
     width: 1200px;
-    margin: 300px auto 300px auto;
+    margin: 100px auto 100px auto;
     text-align: justify;
     font-size: 14px;
     border-radius: 4px;
@@ -18,10 +18,15 @@ $our-product-title-color: #579bb1;
     animation-iteration-count: 1;
     animation-delay: 0.3s;
     animation-duration: 2.5s;
+    cursor: default;
 
     &__header {
         width: 100%;
-        padding: 30px;
+        margin: 0 auto;
+        padding-top: 28px;
+        text-align: center;
+        height: 30px;
+        font-size: 28px;
     }
 
     &__content {

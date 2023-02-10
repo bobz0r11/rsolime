@@ -19,7 +19,10 @@ const Box = ({ title, message, iconName }: BoxProps) => {
                     {title}
                 </div>
             </div>
-            <div className="box__content">{message}</div>
+            <div className="box__content">
+                {message}
+                <div className="box__content--read-more">Read more...</div>
+            </div>
         </div>
     )
 }
