@@ -1,14 +1,22 @@
 import Box from 'components/box';
-import './home.scss'
 
-import { GiFarmTractor, GiFertilizerBag} from "react-icons/gi";
+import { useTranslation } from 'react-i18next';
+
+import { GiFarmTractor, GiFertilizerBag } from "react-icons/gi";
 import { TbBuildingFactory2 } from "react-icons/tb";
 import { IoRestaurantOutline } from "react-icons/io5";
 import { BsHouse } from "react-icons/bs";
 import { HiOutlineBuildingLibrary } from "react-icons/hi2";
 
+import './home.scss'
+
 
 const Home = () => {
+    const { t } = useTranslation();
+
+    console.log(t('Domestic'));
+    console.log(t('Welcome to React'));
+
     return (
         <div className="home">
             <div className="overlay"></div>
