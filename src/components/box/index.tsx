@@ -3,14 +3,15 @@ import './box.scss';
 interface BoxProps {
     title?: String,
     message?: String,
+    classNames?: any,
     iconName?: any,
 };
 
-const Box = ({ title, message, iconName }: BoxProps) => {
+const Box = ({ title, message, iconName, classNames }: BoxProps) => {
     const Icon = iconName;
 
     return (
-        <div className="box">
+        <div className={`box ${classNames}`}>
             <div className="box__header">
                 <div className="box__icon">
                     <Icon />
