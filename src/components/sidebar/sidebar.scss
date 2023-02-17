@@ -1,10 +1,10 @@
-$sidebar-background-color: #579BB1;
-$sidebar-text-color: #F8F4EA;
-$sidebar-text-hover-color: #E1D7C6;
+$sidebar-background-color: #579bb1;
+$sidebar-text-color: #f8f4ea;
+$sidebar-text-hover-color: #e1d7c6;
 
 .sidebar {
     width: 100%;
-    height: 60px;
+    height: 70px;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -22,7 +22,7 @@ $sidebar-text-hover-color: #E1D7C6;
             padding-top: 10px;
 
             &__item {
-                padding: 6px 40px 12px 0px;
+                margin: 12px 20px;
                 text-decoration: none;
                 font-size: 18px;
                 color: $sidebar-text-color;
@@ -32,19 +32,24 @@ $sidebar-text-hover-color: #E1D7C6;
                 white-space: nowrap;
                 justify-content: flex-start;
                 align-items: center;
+                height: 30px;
 
                 &:hover {
                     color: $sidebar-text-hover-color;
-                    opacity: .5;
-                    transition: .5s;
+                    opacity: 0.5;
+                    border-bottom: 2px solid $sidebar-text-color;
+                    border-width: 2px;
                 }
 
                 &--icon {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
 
                 &--text {
                     padding-left: 8px;
+                    letter-spacing: 4px;
+                    word-spacing: 0px;
+                    font-size: 18px;
                 }
             }
         }

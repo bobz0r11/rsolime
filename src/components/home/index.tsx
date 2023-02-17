@@ -15,16 +15,15 @@ const Home = () => {
     const { t } = useTranslation();
 
     console.log(t('Domestic'));
-    console.log(t('Welcome to React'));
 
     const reveal = () => {
         var reveals = document.querySelectorAll(".reveal");
-    
+
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = reveals[i].getBoundingClientRect().top;
             var elementVisible = 150;
-    
+
             if (elementTop < windowHeight - elementVisible) {
                 reveals[i].classList.add("active");
             } else {
@@ -32,15 +31,23 @@ const Home = () => {
             }
         }
     }
-    
+
     window.addEventListener("scroll", () => reveal());
+
+    const src = 'src/images/compost.mp4';
 
     return (
         <div className="home">
             <div className="overlay"></div>
+
+            <video width="auto" height="auto" autoPlay>
+                <source src={src} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            
             <div className="home__box__container">
                 <Box
-                    title={'Domestic'}
+                    title={`${t('Domestic')}`}
                     classNames="reveal fade-left"
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
                     iconName={BsHouse}

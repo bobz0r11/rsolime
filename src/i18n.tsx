@@ -7,13 +7,11 @@ i18n
         resources: {
             en: {
                 translation: {
-                    "Welcome to React": "Welcome to React and react-i18next",
                     'Domestic': 'Domestic',
                 }
             },
             it: {
                 translation: {
-                    "Welcome to React": "Benvenuti in React e react-i18next",
                     'Domestic': 'Domestico',
                 }
             }
