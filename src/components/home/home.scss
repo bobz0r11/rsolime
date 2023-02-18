@@ -1,7 +1,8 @@
-$overlay-background-color: #f8f4ea;
+@import 'App.scss';
 
 .home {
-    margin: 300px 0px;
+    margin: 200px 0px;
+    height: 600px;
 
     .overlay {
         position: fixed;
@@ -19,59 +20,11 @@ $overlay-background-color: #f8f4ea;
     &__box {
         &__container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: center;
+            justify-content: space-between;
             width: 100em;
             margin: auto;
         }
-    }
-
-    .reveal {
-        position: relative;
-        opacity: 0;
-    }
-    .reveal.active {
-        opacity: 1;
-    }
-    .active.fade-bottom {
-        animation: fade-bottom 1s ease-in;
-    }
-    .active.fade-left {
-        animation: fade-left 1s ease-in;
-    }
-    .active.fade-right {
-        animation: fade-right 1s ease-in;
-    }
-}
-
-@keyframes fade-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes fade-left {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes fade-right {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
     }
 }

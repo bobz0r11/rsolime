@@ -1,10 +1,12 @@
 import Home from 'components/home';
-import OurProduct from 'components/ourproduct';
-import About from 'components/about';
+import History from 'components/history';
 import Contact from 'components/contact';
+import Philosophy from 'components/philosophy';
 
-import { CgShoppingBag, CgHome, CgInfo} from "react-icons/cg";
+import { CgHome } from "react-icons/cg";
 import { RiContactsBook2Line } from 'react-icons/ri';
+import { MdOutlineMenuBook } from 'react-icons/md';
+import { GiAtom } from 'react-icons/gi';
 
 const scrollTo = (elem: Element | null): void => {
     elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -23,13 +25,24 @@ export const paths = [
         },
     },
     {
-        id: 'ourproduct',
-        path: '/ourproduct',
-        name: 'Our Product',
-        component: OurProduct,
-        iconName: CgShoppingBag,
+        id: 'philosophy',
+        path: '/philosophy',
+        name: 'Philosophy',
+        component: Philosophy,
+        iconName: GiAtom,
         onClick: (): void => {
-            const elem = document.querySelector('.our-product__content');
+            const elem = document.querySelector('.philosophy__content');
+            scrollTo(elem);
+        },
+    },
+    {
+        id: 'history',
+        path: '/history',
+        name: 'History',
+        component: History,
+        iconName: MdOutlineMenuBook,
+        onClick: (): void => {
+            const elem = document.querySelector('.history__content');
             scrollTo(elem);
         },
     },
@@ -39,17 +52,6 @@ export const paths = [
         name: 'Contact',
         component: Contact,
         iconName: RiContactsBook2Line,
-        onClick: (): void => {
-            const elem = document.querySelector('.footer');
-            scrollTo(elem);
-        },
-    },
-    {
-        id: 'about',
-        path: '/about',
-        name: 'About',
-        component: About,
-        iconName: CgInfo,
         onClick: (): void => {
             const elem = document.querySelector('.footer');
             scrollTo(elem);

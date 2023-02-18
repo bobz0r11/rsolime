@@ -5,8 +5,6 @@ import { BiPhoneCall } from "react-icons/bi";
 import { GoMail, GoLocation } from "react-icons/go";
 import { FaGooglePlusG, FaWhatsapp, FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube, FaRegHandPointDown } from "react-icons/fa";
 
-
-
 const Footer = () => {
     return (
         <footer className="footer">

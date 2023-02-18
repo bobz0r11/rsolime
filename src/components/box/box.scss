@@ -1,6 +1,4 @@
-$box-text-color: #579bb1;
-$box-background-color: #e1d7c6;
-$box-title-color: #478194;
+@import 'App.scss';
 
 .box {
     background-color: $box-background-color;
@@ -14,6 +12,7 @@ $box-title-color: #478194;
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: default;
+    animation: fadeIn 3s;
 
     &:hover {
         transform: scale(1.4);
@@ -53,3 +52,8 @@ $box-title-color: #478194;
         color: $box-title-color;
     }
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
