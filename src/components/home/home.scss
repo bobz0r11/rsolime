@@ -1,8 +1,7 @@
 @import 'App.scss';
 
 .home {
-    margin: 200px 0px;
-    height: 400px;
+    margin: 180px 0px;
 
     .overlay {
         position: fixed;
@@ -21,10 +20,47 @@
         &__container {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: space-between;
             width: 100em;
             margin: auto;
+            padding-top: 180px;
         }
+    }
+
+    &__company-name {
+        height: 100%;
+        text-align: center;
+        font-size: 120px;
+        color: $header-company-name-color;
+        letter-spacing: 32px;
+        font-family: serif;
+        pointer-events: none;
+        animation: fadeInBottom 2s forwards;
+    }
+
+    &__use-cases {
+        margin: auto;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        font-family: serif;
+        color: $header-company-name-color;
+        animation: fadeInBottomBlur 2s forwards;
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(60%);
+        opacity: 0;
+        filter: none;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+        filter: drop-shadow(-12px 6px 8px $header-company-name-color);
     }
 }

@@ -11,7 +11,7 @@ const Box = ({ title, message, iconName, classNames }: BoxProps) => {
     const Icon = iconName;
 
     return (
-        <div className={`box ${classNames}`}>
+        <div className={`box ${classNames || ''}`}>
             <div className="box__header">
                 <div className="box__icon">
                     <Icon />

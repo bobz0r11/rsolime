@@ -19,12 +19,18 @@ const Home = () => {
     return (
         <div className="home">
             <div className="overlay"></div>
+            <div className="home__company-name">
+                CIELO
+            </div>
             <div className="home__box__container">
                 <Box
                     title={`${t('Domestic')}`}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}
                     iconName={BsHouse}
                 />
+                <div className="home__use-cases">
+                    USE CASES
+                </div>
                 <Box
                     title={'Fertile'}
                     message={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}

@@ -1,5 +1,5 @@
 $overlay-background-color: #FCFFE7;
-$box-background-color: #BAD7E9;
+$box-background-color: #FCFFE7;
 $sidebar-background-color: #2B3467;
 $box-title-color: #2B3467;
 $box-text-color: $sidebar-background-color;
@@ -7,6 +7,7 @@ $sidebar-text-hover-color: $box-background-color;
 $sidebar-text-color: $overlay-background-color;
 $content-text-color: $box-text-color;
 $footer-icon-color: $overlay-background-color;
+$header-company-name-color: $box-title-color;
 
 .app {
     width: 100%;

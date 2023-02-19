@@ -5,8 +5,8 @@ import Philosophy from 'components/philosophy';
 
 import { CgHome } from "react-icons/cg";
 import { RiContactsBook2Line } from 'react-icons/ri';
-import { MdOutlineMenuBook } from 'react-icons/md';
-import { GiAtom } from 'react-icons/gi';
+import { MdOutlineHistoryEdu } from 'react-icons/md';
+import { GiClassicalKnowledge } from 'react-icons/gi';
 
 const scrollTo = (elem: Element | null): void => {
     elem?.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -20,7 +20,7 @@ export const paths = [
         component: Home,
         iconName: CgHome,
         onClick: (): void => {
-            const elem = document.querySelector('.home__box__container');
+            const elem = document.querySelector('.home__company-name');
             scrollTo(elem);
         },
     },
@@ -29,9 +29,9 @@ export const paths = [
         path: '/philosophy',
         name: 'Philosophy',
         component: Philosophy,
-        iconName: GiAtom,
+        iconName: GiClassicalKnowledge,
         onClick: (): void => {
-            const elem = document.querySelector('.philosophy__content');
+            const elem = document.querySelector('.philosophy__content--text');
             scrollTo(elem);
         },
     },
@@ -40,7 +40,7 @@ export const paths = [
         path: '/history',
         name: 'History',
         component: History,
-        iconName: MdOutlineMenuBook,
+        iconName: MdOutlineHistoryEdu,
         onClick: (): void => {
             const elem = document.querySelector('.history__content');
             scrollTo(elem);
