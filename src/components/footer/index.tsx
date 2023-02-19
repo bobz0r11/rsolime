@@ -3,7 +3,7 @@ import './footer.scss';
 import { TbFlower } from "react-icons/tb";
 import { BiPhoneCall } from "react-icons/bi";
 import { GoMail, GoLocation } from "react-icons/go";
-import { FaGooglePlusG, FaWhatsapp, FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube, FaRegHandPointDown } from "react-icons/fa";
+import { FaGooglePlusG, FaWhatsapp, FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -11,18 +11,15 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__header">
                     <div className="footer__header__column">
-                        <div className="footer__header--icon"> <TbFlower /> </div>
-                        <div className="footer__header--company">Cielo Vision</div>
+                        <div className="footer__header--company">
+                            <div className="footer__header--icon"> <TbFlower /> </div>
+                            Cielo Vision
+                        </div>
                         <div className="footer__header--text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
                         </div>
                     </div>
 
                     <div className="footer__header__column">
-                        <div className="footer__header--icon">
-                            <span className="footer__header--touch--icon">
-                                <FaRegHandPointDown />
-                            </span>
-                        </div>
                         <div className="footer__header--company">
                             Get in touch
                         </div>
