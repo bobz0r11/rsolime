@@ -1,13 +1,14 @@
-$overlay-background-color: #fcffe7;
-$box-background-color: #fcffe7;
-$navbar-background-color: #2b3467;
-$box-title-color: #2b3467;
-$box-text-color: $navbar-background-color;
+$black: rgb(44, 37, 37);
+$overlay-background-color: #ffefe6;
+$box-background-color: #fcfdfd;
+$navbar-background-color: $black;
+$box-title-color: #7286D3;
+$box-text-color: $black;
 $navbar-text-hover-color: $box-background-color;
 $navbar-text-color: $overlay-background-color;
-$content-text-color: rgb(0, 0, 0);
+$content-text-color: $black;
 $footer-icon-color: $overlay-background-color;
-$header-company-name-color: #65C2F5;
+$header-company-name-color: $black;
 
 .app {
     width: 100%;
@@ -42,16 +43,16 @@ $header-company-name-color: #65C2F5;
     opacity: 1;
 }
 .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
+    animation: fade-bottom 1.5s ease-in;
 }
 .active.fade-left {
-    animation: fade-left 1s ease-in;
+    animation: fade-left 1.5s ease-in;
 }
 .active.fade-right {
-    animation: fade-right 1s ease-in;
+    animation: fade-right 1.5s ease-in;
 }
 .active.fade-top {
-    animation: fade-top 1s ease-in;
+    animation: fade-top 1.5s ease-in;
 }
 
 @keyframes fade-bottom {

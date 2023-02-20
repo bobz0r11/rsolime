@@ -26,33 +26,48 @@
         }
 
         &--header {
-            font-size: 60px;
+            font-size: 48px;
             letter-spacing: 12px;
             text-align: center;
             color: rgb(0, 0, 0);
             pointer-events: none;
             margin: 120px 0px;
+            font-weight: bold;
+
+            &__icon {
+                font-size: 80px;
+            }
         }
 
         &--text {
             text-align: justify;
             word-spacing: 3px;
             tab-size: 4;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 200;
             color: rgb(0, 0, 0);
-            padding-top: 80px;
+            padding-top: 90px;
 
             &--icon {
-                font-size: 15px;
+                font-size: 14px;
                 color: #3d8943;
+                padding-right: 8px;
+            }
+
+            &--info {
+                padding-top: 160px;
+                padding-left: 28px;
+            }
+
+            &--adatoper {
+                padding: 4px;
             }
         }
 
         &--title {
-            margin: 80px;
-            font-size: 40px;
-            letter-spacing: 2px;
+            margin: 80px 28px;
+            font-size: 30px;
+            letter-spacing: 4px;
+            font-weight: bold;
 
             &--left {
                 text-align: start;

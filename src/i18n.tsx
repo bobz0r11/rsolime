@@ -1,26 +1,24 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
+import it from 'constants/translations/it.json';
+import en from 'constants/translations/en.json';
+
 i18n
     .use(initReactI18next)
     .init({
         resources: {
             en: {
-                translation: {
-                    'Domestic': 'Domestic',
-                }
+                translation: en,
             },
             it: {
-                translation: {
-                    'Domestic': 'Domestico',
-                }
+                translation: it,
             }
         },
-        lng: "it",
-        fallbackLng: "en",
-        interpolation: {
-            escapeValue: false
-        }
+        lng: 'it',
+        fallbackLng: 'en',
+        supportedLngs: ['it', 'en'],
+        debug: true
     });
 
 export default i18n;

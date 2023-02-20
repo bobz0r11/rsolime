@@ -20,7 +20,7 @@ export const paths = [
         component: Home,
         iconName: CgHome,
         onClick: (): void => {
-            const elem = document.querySelector('.home__company-name');
+            const elem = document.querySelector('.home__company-name--text');
             scrollTo(elem);
         },
     },

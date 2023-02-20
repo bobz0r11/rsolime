@@ -2,14 +2,37 @@
 
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 68px;
     position: fixed;
     z-index: 999;
     top: 0;
-    background-color: #65C2F5;
-    border-bottom: 1px solid $navbar-text-color;
-    border-width: thin;
-    font-family: fangsong;
+    background-color: $navbar-background-color;
+
+    &__langselect {
+        position: absolute;
+        left: 24px;
+        top: 12px;
+        font-size: 20px;
+        font-weight: 700;
+
+        &--btn {
+            width: 36px;
+            height: 32px;
+            border: none;
+            margin: 4px;
+            cursor: pointer;
+            color: $navbar-text-color;
+            background-color: $navbar-background-color;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            &--active {
+                border-bottom: 1px solid rgb(38, 238, 38);
+            }
+        }
+    }
 
     &__container {
         position: fixed;
@@ -18,25 +41,24 @@
         .navbar__list {
             display: flex;
             justify-content: center;
-            padding-top: 10px;
+            padding-top: 14px;
 
             &__item {
-                margin: 12px 20px;
+                margin: 8px 20px;
                 text-decoration: none;
-                color: rgb(0, 0, 0);
+                color: $navbar-text-color;
                 display: flex;
                 cursor: pointer;
                 flex-direction: row;
                 white-space: nowrap;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: stretch;
                 height: 30px;
 
                 &:hover {
                     color: $navbar-text-hover-color;
-                    opacity: 0.5;
                     border-bottom: 2px solid $navbar-text-color;
-                    border-width: 2px;
+                    opacity: 0.7;
                 }
 
                 &--icon {
@@ -47,37 +69,9 @@
                     padding-left: 8px;
                     letter-spacing: 2px;
                     word-spacing: 0px;
-                    font-size: 20px;
+                    font-size: 18px;
                     text-decoration: none;
                     color: unset;
-                }
-            }
-        }
-
-        .navbar__separator {
-            height: 2px;
-            width: 70%;
-            margin: auto;
-            background-color: #375675;
-            border-radius: 2px;
-            margin-top: 1em;
-        }
-
-        .navbar__social-media {
-            text-align: center;
-            padding: 1em 0px;
-            text-decoration: none;
-            font-size: 22px;
-            color: black;
-            display: block;
-
-            &--icon {
-                padding: 0px 2px;
-                color: grey;
-
-                &:hover {
-                    opacity: 0.6;
-                    cursor: pointer;
                 }
             }
         }

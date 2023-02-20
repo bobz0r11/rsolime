@@ -1,29 +1,68 @@
 @import 'App.scss';
 
 .home {
-    margin: 130px 0px;
-
     &__box {
         &__container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100em;
+            width: 80%;
             margin: auto;
-            padding-top: 30px;
+            padding-top: 180px;
         }
     }
 
     &__company-name {
         height: 100%;
-        text-align: center;
-        font-size: 120px;
-        color: $header-company-name-color;
-        letter-spacing: 40px;
-        font-family: serif;
-        pointer-events: none;
-        animation: fadeInBottom 2s forwards;
+        position: relative;
+
+        &--text {
+            width: 340px;
+            padding-left: 14px;
+            letter-spacing: 18px;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: $header-company-name-color;
+            pointer-events: none;
+            position: absolute;
+            z-index: 1;
+            left: 42%;
+            top: 40%;
+            animation: fadeInBottom 1.5s;
+        }
+
+        hr {
+            position: absolute;
+            text-align: center;
+            z-index: 1;
+            left: 42%;
+            top: 46%;
+            width: 340px;
+            height: 8px;
+            background-color: $header-company-name-color;
+        }
+
+        &--subtext {
+            width: 340px;
+            padding-left: 14px;
+            letter-spacing: 6px;
+            text-align: center;
+            font-size: 16px;
+            color: $header-company-name-color;
+            pointer-events: none;
+            position: absolute;
+            z-index: 1;
+            left: 42%;
+            top: 48%;
+            animation: fadeInBottom 1.5s;
+        }
+
+        &--img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -37,6 +76,5 @@
     100% {
         transform: translateY(0%);
         opacity: 1;
-        filter: drop-shadow(-8px 0px 8px #2b3467);
     }
 }

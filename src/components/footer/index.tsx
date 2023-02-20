@@ -1,11 +1,15 @@
 import './footer.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import { TbFlower } from "react-icons/tb";
 import { BiPhoneCall } from "react-icons/bi";
 import { GoMail, GoLocation } from "react-icons/go";
-import { FaGooglePlusG, FaWhatsapp, FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className="footer">
             <div className="container">
@@ -21,11 +25,19 @@ const Footer = () => {
 
                     <div className="footer__header__column">
                         <div className="footer__header--company">
-                            Get in touch
+                            {t('contact')}
                         </div>
                         <div className="footer__header--contact">
                             <span className="footer__header--contact--icon">
                                 <BiPhoneCall />
+                            </span>
+                            <span className="footer__header--contact--text">
+                                (+39) 333 177 3990
+                            </span>
+                        </div>
+                        <div className="footer__header--contact">
+                            <span className="footer__header--contact--icon">
+                                <FaWhatsapp />
                             </span>
                             <span className="footer__header--contact--text">
                                 (+39) 333 177 3990
@@ -46,28 +58,6 @@ const Footer = () => {
                             <span className="footer__header--contact--text">
                                 CIELO SRL - Via T. Poletti 48 A 42025 Cavriago (RE)
                             </span>
-                        </div>
-                        <div className="footer__header--contact">
-                            <div className="footer__header--contact--social-media">
-                                <span className="footer__header--contact--social-media--fb" title="Facebook">
-                                    <FaFacebookSquare />
-                                </span>
-                                <span className="footer__header--contact--social-media--ig" title="Instagram">
-                                    <FaInstagramSquare />
-                                </span>
-                                <span className="footer__header--contact--social-media--tw" title="Twitter">
-                                    <FaTwitter />
-                                </span>
-                                <span className="footer__header--contact--social-media--yt" title="YouTube">
-                                    <FaYoutube />
-                                </span>
-                                <span className="footer__header--contact--social-media--wapp" title="Whatsapp">
-                                    <FaWhatsapp />
-                                </span>
-                                <span className="footer__header--contact--social-media--gplus" title="Google+">
-                                    <FaGooglePlusG />
-                                </span>
-                            </div>
                         </div>
                     </div>
                 </div>

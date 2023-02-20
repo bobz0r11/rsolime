@@ -1,15 +1,8 @@
 {
   "projects": {
-    "default": "rsolime"
+    "cielovision": "cielovision-9c013",
+    "default": "cielovision-9c013"
   },
-  "targets": {
-    "rsolime": {
-      "hosting": {
-        "rsolime": [
-          "rsolime.web.app"
-        ]
-      }
-    }
-  },
+  "targets": {},
   "etags": {}
 }
