@@ -172,16 +172,16 @@ const Domestic = () => {
 
                             <div>
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarpe
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_shoes')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannolini
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_diapers')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannoloni
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_sanitarynapkin')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Salva slip
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_pantyliners')}
 
                                 <br />
                             </div>
@@ -202,22 +202,22 @@ const Domestic = () => {
 
                             <div>
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Cani
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_dogs')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Gatti
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_cats')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Furetti roditori
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_rodents')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Conigli
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_rabbits')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Uccelli
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_birds')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pesci ornamentali, tartarughe, serpenti e molti altri
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_fish')}
 
                                 <br />
                             </div>
@@ -238,19 +238,19 @@ const Domestic = () => {
 
                             <div>
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Grigliati
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_gratings')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Fosse biologiche
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_fosse')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzetti
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_wells')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzi neri
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_cesspits')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Vasche condensa grassi, ecc.
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_grease')}
 
                                 <br />
                             </div>
@@ -271,22 +271,22 @@ const Domestic = () => {
 
                             <div>
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Sfalci
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_mowing')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti da cucina
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_kitchenscraps')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di foglie
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_leafscraps')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di fiori
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_flowerscraps')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di potature
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_pruningscraps')}
 
                                 <br />
-                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Altre sostanze organiche in decomposizione
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_substances')}
 
                                 <br />
                             </div>
