@@ -12,7 +12,7 @@
             display: inline;
             width: 550px;
             height: 380px;
-            border: 2px solid $content-text-color;
+            border: 14px solid $content-text-color;
             padding: 2px;
             margin: 0px 28px;
 
@@ -36,6 +36,10 @@
 
             &__icon {
                 font-size: 80px;
+            }
+
+            &__text {
+                text-transform: uppercase;
             }
         }
 
@@ -64,10 +68,11 @@
         }
 
         &--title {
-            margin: 80px 28px;
+            margin: 140px 28px;
             font-size: 30px;
             letter-spacing: 4px;
             font-weight: bold;
+            text-transform: uppercase;
 
             &--left {
                 text-align: start;

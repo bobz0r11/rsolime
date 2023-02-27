@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import NavBar from 'components/navbar';
 import Footer from 'components/footer';
@@ -31,6 +31,7 @@ root.render(
         <Route path='/horeca' element={<Horeca />} />
         <Route path='/industrial' element={<Industrial />} />
         <Route path='/publicentities' element={<Publicentities />} />
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
       <Footer />
     </BrowserRouter>

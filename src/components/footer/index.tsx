@@ -32,7 +32,7 @@ const Footer = () => {
                                 <BiPhoneCall />
                             </span>
                             <span className="footer__header--contact--text">
-                                (+39) 333 177 3990
+                                Roberto Solime - (+39) 333 177 3990
                             </span>
                         </div>
                         <div className="footer__header--contact">
@@ -40,7 +40,7 @@ const Footer = () => {
                                 <FaWhatsapp />
                             </span>
                             <span className="footer__header--contact--text">
-                                (+39) 333 177 3990
+                                Roberto Solime - (+39) 333 177 3990
                             </span>
                         </div>
                         <div className="footer__header--contact">
@@ -48,7 +48,7 @@ const Footer = () => {
                                 <GoMail />
                             </span>
                             <span className="footer__header--contact--text">
-                                rsolime@solime.it
+                                cielo.solime@gmail.com
                             </span>
                         </div>
                         <div className="footer__header--contact">

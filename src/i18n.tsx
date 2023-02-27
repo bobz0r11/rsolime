@@ -18,7 +18,6 @@ i18n
         lng: 'it',
         fallbackLng: 'en',
         supportedLngs: ['it', 'en'],
-        debug: true
     });
 
 export default i18n;

@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import casa1 from 'images/casa1.jpg';
 import casa2 from 'images/casa2.jpg';
 import casa4 from 'images/casa4.jpg';
@@ -15,6 +17,7 @@ import { FiCheckCircle } from "react-icons/fi";
 import './domestic.scss';
 
 const Domestic = () => {
+    const { t } = useTranslation();
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -30,91 +33,121 @@ const Domestic = () => {
                             <BsHouse />
                         </div>
                         <div className="domestic__content--header__text">
-                            DOMESTICO
+                            {t('domestic')}
                         </div>
                     </div>
                     <div className="reveal active fade-bottom">
                         <div className="domestic__content--title">
-                            CASA - SERVIZI IGIENICI
+                            {t('domestic_toilet')}
                         </div>
                         <img className="domestic__content--image domestic__content--image--left" src={casa1} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> WC
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Lavabi
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Lavandini
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> piatti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> doccia, vasche, ecc.
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"><FiCheckCircle /></span>WC
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"><FiCheckCircle /></span>{t('domestic_washbasins')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"><FiCheckCircle /></span>{t('domestic_sinks')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"><FiCheckCircle /></span>{t('domestic_shower')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"><FiCheckCircle /></span>{t('domestic_trays')}
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere ½ cucchiaino da caffè per ogni scarico interessato 2 volte prima settimana.  dopo 15gg, infine, una volta al mese, preferibilmente la sera; il mattino seguente fare scorrere acqua.
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_toilet')}
                             </div>
                         </div>
                     </div>
 
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--right">
-                            CASA - CUCINA
+                            {t('domestic_kitchen')}
                         </div>
                         <img className="domestic__content--image domestic__content--image--right" src={casa2} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Piani di lavoro
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pavimenti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Lavastoviglie/Lavatrice
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Interno cappe
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Climatizzatori, forni, frigoriferi, ecc.
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pattumiera organico
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_workplans')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_flooring')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_dishwasher')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_insidehoods')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_aircond')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_trashcan')}
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere ½ cucchiaino da caffè in 1/2 litro di acqua, mescolare, filtrare su fazzolettino di carta, in flacone munito di erogatore spray. Nebulizzare sulle parti interessate. Pattumiera organico: Disperdere ¼ di un cucchiaino da caffè anche tutti i giorni su residui alimentari che emettono forti odori o a giorni alterni.
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_kitchen')}
                             </div>
                         </div>
                     </div>
 
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--left">
-                            CASA - CAMERE DA LETTO
+                            {t('domestic_bedroom')}
                         </div>
                         <img className="domestic__content--image domestic__content--image--left" src={casa4} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pavimenti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Tappeti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Tendaggi
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Materassi
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Cuscini
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarpiere
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_floors')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_carpets')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_curtains')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_matteresses')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_cushions')}
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> {t('domestic_shoeracks')}
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere ½ cucchiaino da caffè in 1/2 litro di acqua, mescolare, filtrare su fazzolettino di carta, in flacone munito di erogatore spray. Nebulizzare sulle parti interessate.
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_bedroom')}
                             </div>
 
                         </div>
                     </div>
 
-                    <div className="reveal fade-bottom">
+                    {/* <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--right">
                             CASA - SALOTTI STUDI
                         </div>
                         <img className="domestic__content--image domestic__content--image--right" src={casa5} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
                                 <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pavimenti
@@ -124,105 +157,143 @@ const Domestic = () => {
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
+                                <strong>{t('usecase')} </strong>
                                 Disperdere ½ cucchiaino da caffè in 1/2 litro di acqua, mescolare, filtrare su fazzolettino di carta, in flacone munito di erogatore spray. Nebulizzare sulle parti interessate.
                             </div>
                         </div>
-                    </div>
-
-                    <div className="reveal fade-bottom">
-                        <div className="domestic__content--title domestic__content--title--left">
-                            CASA - AMBIENTI ESTERNI (PORTICATI-AREE COTILIVE)
-                        </div>
-                        <img className="domestic__content--image domestic__content--image--left" src={casa6} alt="Logo" />
-                        <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
-
-                            <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Grigliati
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Fosse biologiche
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzetti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzi neri
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Vasche condensa grassi, ecc.
-                                <br />
-                            </div>
-
-                            <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere ½ cucchiaino da caffè sulle parti interessate 2 volte prima settimana. Dopo 15gg, infine una volta al mese.
-                            </div>
-                        </div>
-                    </div>
+                    </div> */}
 
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--right">
-                            CASA - AMBIENTE ESTERNO (COMPOSTIERA FAI DA TE)
+                            {t('domestic_children')}
                         </div>
-                        <img className="domestic__content--image domestic__content--image--right" src={casa7} alt="Logo" />
+                        <img className="domestic__content--image domestic__content--image--right" src={casa8} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Sfalci
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti da cucina
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di foglie
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di fiori
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di potature
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Altre sostanze organiche in decomposizione
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarpe
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannolini
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannoloni
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Salva slip
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere ½ cucchiaino da caffè ogni 15 gg. In soli 3 mese avrete il vero compost per il vostro giardino e il vostro orto.
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_children')}
                             </div>
                         </div>
                     </div>
 
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--left">
-                            CASA - FAMIGLIA
+                            {t('domestic_pets')}
                         </div>
-                        <img className="domestic__content--image domestic__content--image--left" src={casa8} alt="Logo" />
+                        <img className="domestic__content--image domestic__content--image--left" src={casa9} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarpe
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannolini
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pannoloni
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Salva slip
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Cani
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Gatti
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Furetti roditori
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Conigli
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Uccelli
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pesci ornamentali, tartarughe, serpenti e molti altri
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere in minime quantità a modo di talco.
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_pets')}
                             </div>
                         </div>
                     </div>
 
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--right">
-                            CASA - ANIMALI DA COMPAGNIA
+                            {t('domestic_external_env1')}
                         </div>
-                        <img className="domestic__content--image domestic__content--image--right" src={casa9} alt="Logo" />
+                        <img className="domestic__content--image domestic__content--image--right" src={casa6} alt="Logo" />
                         <div className="domestic__content--text">
-                            <strong>Adatto per:</strong>
 
                             <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Cani
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Gatti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Furetti roditori
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Conigli
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Uccelli
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pesci ornamentali, tartarughe, serpenti e molti altri
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Grigliati
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Fosse biologiche
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzetti
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pozzi neri
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Vasche condensa grassi, ecc.
+
                                 <br />
                             </div>
 
                             <div className="domestic__content--text--info">
-                                <strong>Modalità d'uso: </strong>
-                                Disperdere in minime quantità a modo di talco lella lettiera-nella cuccia 2 volte la settimana. (per i pesci ornamentali disperso nell'acqua).
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_external_env1')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="reveal fade-bottom">
+                        <div className="domestic__content--title domestic__content--title--left">
+                            {t('domestic_external_env2')}
+                        </div>
+                        <img className="domestic__content--image domestic__content--image--left" src={casa7} alt="Logo" />
+                        <div className="domestic__content--text">
+
+                            <div>
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Sfalci
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti da cucina
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di foglie
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di fiori
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Scarti di potature
+
+                                <br />
+                                &emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Altre sostanze organiche in decomposizione
+
+                                <br />
+                            </div>
+
+                            <div className="domestic__content--text--info">
+                                <strong>{t('usecase')}</strong>
+                                {t('domestic_usecase_external_env2')}
                             </div>
                         </div>
                     </div>
