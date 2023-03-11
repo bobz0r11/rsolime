@@ -1,11 +1,11 @@
 import Home from 'components/home';
-import History from 'components/history';
-import Contact from 'components/contact';
+import Chisiamo from 'components/chisiamo';
+import Footer from 'components/footer';
 import Philosophy from 'components/philosophy';
 
 import { CgHome } from "react-icons/cg";
 import { RiContactsBook2Line } from 'react-icons/ri';
-import { MdOutlineHistoryEdu } from 'react-icons/md';
+import { MdPeopleOutline } from 'react-icons/md';
 import { GiClassicalKnowledge } from 'react-icons/gi';
 
 const scrollTo = (elem: Element | null): void => {
@@ -20,7 +20,7 @@ export const paths = [
         component: Home,
         iconName: CgHome,
         onClick: (): void => {
-            const elem = document.querySelector('.home__company-name--text');
+            const elem = document.querySelector('.home__company-name--img');
             scrollTo(elem);
         },
     },
@@ -36,13 +36,13 @@ export const paths = [
         },
     },
     {
-        id: 'history',
+        id: 'chisiamo',
         path: '/',
-        name: 'History',
-        component: History,
-        iconName: MdOutlineHistoryEdu,
+        name: 'Chisiamo',
+        component: Chisiamo,
+        iconName: MdPeopleOutline,
         onClick: (): void => {
-            const elem = document.querySelector('#scrollToHistory');
+            const elem = document.querySelector('#scrollToChisiamo');
             scrollTo(elem);
         },
     },
@@ -50,7 +50,7 @@ export const paths = [
         id: 'contact',
         path: '/',
         name: 'Contact',
-        component: Contact,
+        component: Footer,
         iconName: RiContactsBook2Line,
         onClick: (): void => {
             const elem = document.querySelector('.footer');

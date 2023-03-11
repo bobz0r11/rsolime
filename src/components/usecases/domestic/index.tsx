@@ -142,27 +142,6 @@ const Domestic = () => {
                         </div>
                     </div>
 
-                    {/* <div className="reveal fade-bottom">
-                        <div className="domestic__content--title domestic__content--title--right">
-                            CASA - SALOTTI STUDI
-                        </div>
-                        <img className="domestic__content--image domestic__content--image--right" src={casa5} alt="Logo" />
-                        <div className="domestic__content--text">
-
-                            <div>
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Pavimenti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Tappeti
-                                <br />&emsp;&emsp;<span className="domestic__content--text--icon"> <FiCheckCircle /> </span> Divani, poltrone, tendaggi ecc.
-                                <br />
-                            </div>
-
-                            <div className="domestic__content--text--info">
-                                <strong>{t('usecase')} </strong>
-                                Disperdere ½ cucchiaino da caffè in 1/2 litro di acqua, mescolare, filtrare su fazzolettino di carta, in flacone munito di erogatore spray. Nebulizzare sulle parti interessate.
-                            </div>
-                        </div>
-                    </div> */}
-
                     <div className="reveal fade-bottom">
                         <div className="domestic__content--title domestic__content--title--right">
                             {t('domestic_children')}

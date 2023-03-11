@@ -9,7 +9,7 @@ import { BsHouse } from "react-icons/bs";
 
 import Box from 'components/box';
 
-import logo from 'images/sky.jpg';
+import logo from 'images/logo.jpg';
 
 import './home.scss'
 
@@ -17,7 +17,7 @@ const Home = () => {
     const { t } = useTranslation();
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }, [])
 
     return (
@@ -26,13 +26,6 @@ const Home = () => {
                 <div className="overlay" />
                 <div className="home__company-name">
                     <img className="home__company-name--img" src={logo} alt="Logo" />
-                    <span className="home__company-name--text">
-                        CIELO
-                    </span>
-                    <hr />
-                    <span className="home__company-name--subtext">
-                        {t('motto')}
-                    </span>
                 </div>
                 <div className="home__box__container">
                     <Box

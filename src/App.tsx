@@ -1,6 +1,6 @@
 import Home from 'components/home';
 import Philosophy from 'components/philosophy';
-import History from 'components/history';
+import Chisiamo from 'components/chisiamo';
 
 import './App.scss';
 
@@ -29,7 +29,7 @@ const App = () => {
       <div className="content">
         <Home />
         <Philosophy />
-        <History />
+        <Chisiamo />
       </div>
     </div>
   );
