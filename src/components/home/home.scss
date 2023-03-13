@@ -9,13 +9,13 @@
             justify-content: center;
             width: 80%;
             margin: auto;
-            padding-top: 180px;
+            padding-top: 40px;
         }
     }
 
     &__company-name {
-        height: 100%;
-        position: relative;
+        display: flex;
+        justify-content: center;
 
         &--text {
             width: 340px;
@@ -60,12 +60,18 @@
         }
 
         &--img {
-            width: 1200px;
-            height: 600px;
-            display: flex;
-            margin: auto;
-            position: relative;
-            top: 14em;
+            &--product {
+                width: 240px;
+                height: 600px;
+                box-shadow: 4px 6px 8px 2px;
+            }
+
+            &--logo {
+                width: 1200px;
+                height: 600px;
+                display: flex;
+                box-shadow: 4px 6px 8px 2px;
+            }
         }
     }
 }

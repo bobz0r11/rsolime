@@ -3,7 +3,7 @@ import Chisiamo from 'components/chisiamo';
 import Footer from 'components/footer';
 import Philosophy from 'components/philosophy';
 
-import { CgHome } from "react-icons/cg";
+import { TfiShoppingCart } from "react-icons/tfi";
 import { RiContactsBook2Line } from 'react-icons/ri';
 import { MdPeopleOutline } from 'react-icons/md';
 import { GiClassicalKnowledge } from 'react-icons/gi';
@@ -14,13 +14,13 @@ const scrollTo = (elem: Element | null): void => {
 
 export const paths = [
     {
-        id: 'home',
+        id: 'chisiamo',
         path: '/',
-        name: 'Home',
-        component: Home,
-        iconName: CgHome,
+        name: 'Chisiamo',
+        component: Chisiamo,
+        iconName: MdPeopleOutline,
         onClick: (): void => {
-            const elem = document.querySelector('.home__company-name--img');
+            const elem = document.querySelector('#scrollToChisiamo');
             scrollTo(elem);
         },
     },
@@ -36,13 +36,13 @@ export const paths = [
         },
     },
     {
-        id: 'chisiamo',
+        id: 'products',
         path: '/',
-        name: 'Chisiamo',
-        component: Chisiamo,
-        iconName: MdPeopleOutline,
+        name: 'Prodotti',
+        component: Home,
+        iconName: TfiShoppingCart,
         onClick: (): void => {
-            const elem = document.querySelector('#scrollToChisiamo');
+            const elem = document.querySelector('#scrollToHome');
             scrollTo(elem);
         },
     },

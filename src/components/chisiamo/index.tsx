@@ -9,8 +9,8 @@ const Chisiamo = () => {
     return (
         <div className="chisiamo">
             <div className="chisiamo__content">
-                <div className="chisiamo__content--header reveal fade-left">{t('chisiamo')}</div>
-                <div className="reveal fade-bottom">
+                <div className="chisiamo__content--header active reveal fade-left">{t('chisiamo')}</div>
+                <div className="active reveal fade-bottom">
                     <div className="chisiamo__content--title">
                         {/* {t('chisiamo_title1')} */}
                     </div>

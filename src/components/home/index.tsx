@@ -10,6 +10,7 @@ import { BsHouse } from "react-icons/bs";
 import Box from 'components/box';
 
 import logo from 'images/logo.jpg';
+import product from 'images/flacon.jpg';
 
 import './home.scss'
 
@@ -25,9 +26,11 @@ const Home = () => {
             <div className="home">
                 <div className="overlay" />
                 <div className="home__company-name">
-                    <img className="home__company-name--img" src={logo} alt="Logo" />
+                    <img className="home__company-name--img--logo" src={logo} alt="Logo" />
+                    <img className="home__company-name--img--product" src={product} alt="Product" />
                 </div>
                 <div className="home__box__container">
+                    <span id="scrollToHome" />
                     <Box
                         style={{ flexDirection: 'row' }}
                         classNames={'reveal fade-right box--end'}
